@@ -1,0 +1,42 @@
+#squares-container {
+  width: 800px;
+  height: 450px;
+  margin: auto;
+  border: solid 1px black;
+  transition: border-radius 4s, height 4s;
+}
+
+#squares-container:hover {
+  border-radius: 25px;
+  height: 475px;
+}
+
+#squares-container:hover .even {
+  transform: translateX(371px) rotate(1080deg) scale(.75);
+}
+
+#squares-container:hover .odd {
+  transform: translateX(-340px) rotate(-1080deg) scale(2);
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px auto;
+  color: white;
+  transition: transform 4s, translate 4s;
+}
+
+.even {
+  background-color: blue;
+}
+
+.odd {
+  background-color: purple;
+}
+
+.number {
+  vertical-align: middle;
+}
